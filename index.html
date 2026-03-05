@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feliz Cumpleaños Mami 🌹</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="petal-canvas"></canvas>
+  <audio id="bg-music" src="cancion.mp3" loop preload="auto"></audio>
+
+  <!-- PANTALLA DE APERTURA -->
+  <div id="intro">
+    <div class="intro-rose">🌹</div>
+    <p class="intro-text">
+      Hay alguien que te quiere<br>
+      más de lo que las palabras pueden decir...
+    </p>
+    <button class="open-btn" onclick="openCard()">Abrir regalo ✦</button>
+  </div>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-roses">🌹 🌹 🌹</div>
+      <p class="edad-badge">✦ Celebrando el cumpleaños a la mejor madre del mundo ✦</p>
+      <h1 class="hero-title">Feliz<br>Cumpleaños</h1>
+      <h2 class="hero-subtitle">Mamita Hermosa</h2>
+      <div class="years-display">
+        <div class="years-line"></div>
+        <div>
+          <div class="years-number">57</div>
+          <div class="years-label">años de edad<br>De la mejor madre</div>
+        </div>
+        <div class="years-line right"></div>
+      </div>
+      <p class="scroll-hint">↓ desplázate ↓</p>
+    </section>
+
+    <!-- GALERÍA DOS FOTOS -->
+    <section class="section">
+      <p class="section-label reveal">Momentos que atesoro</p>
+      <h2 class="section-title reveal">Nuestra historia</h2>
+      <div class="gallery reveal">
+        <div class="photo-frame" id="frame1">
+          <img src="foto1.jpg" alt="Foto 1">
+          <div class="photo-label">Juntos siempre 💕</div>
+        </div>
+        <div class="photo-frame" id="frame2">
+          <img src="foto2.jpg" alt="Foto 2">
+          <div class="photo-label">Mi mami hermosa 🌹</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section class="letter-section">
+      <div class="letter-inner reveal-letter">
+        <p class="letter-date">Marzo, 2026 &nbsp;—&nbsp; Escrita con todo mi amor</p>
+        <h3 class="letter-greeting">Mami,</h3>
+        <div class="letter-body">
+          <p>Hoy es tu día, y aunque el mundo siga girando como si nada, para mí se detiene solo para celebrarte a ti. <span class="highlight">57 años de una vida llena de amor, de batallas ganadas en silencio y de una fuerza que me deja sin palabras.</span> Eres la mujer más hermosa, más valiente y más buena que existe, y hoy más que nunca siento que no merezco tenerte como mamá… pero gracias a Dios te tengo.</p>
+          <p>Sé que no he sido el mejor hijo, mami. Soy consciente de eso todos los días. He tomado malas decisiones, he fallado, he decepcionado en momentos que no debí, y cada vez que pienso en eso me duele el alma porque sé cuánto has sufrido por mí. Pero también sé que, a pesar de todo, <span class="highlight">nunca has dejado de quererme. Nunca has dejado de creer en mí cuando nadie más lo hacía, ni siquiera yo mismo.</span> Gracias por esa confianza ciega, por seguir viéndome como tu niño aunque yo haya tropezado tanto. Eso me salva, mami. Me motiva a levantarme cada mañana y decirme: "Hoy voy a ser mejor, por mi mami".</p>
+          <p>Me esfuerzo día a día por ser el hijo que mereces. No siempre lo logro, pero lo intento con todo. Porque <span class="highlight">cada paso que doy en este camino —mis estudios, mis luchas, mis sueños— es gracias a ti.</span> Gracias a tus sacrificios interminables, a las noches sin dormir, a las lágrimas que escondiste para que yo no las viera, a todo lo que renunciaste para que yo pudiera llegar hasta aquí. Estoy donde estoy solo por ti. Tú construiste mis alas, aunque a veces las haya usado mal.</p>
+          <p>Hoy duele tanto no poder estar ahí… Ojalá pudiera abrazarte fuerte, besarte la frente, cantarte el cumpleaños pegadito a tu oído y verte sonreír como solo tú sabes. <span class="highlight">Me rompe el corazón no poder pasar este día contigo</span>, porque nada me hace más feliz que estar a tu lado: reírnos de tonterías, contarte mis cosas, escucharte hablar de las tuyas, simplemente sentir que mi hogar está donde estás tú. Te extraño con el alma, mami.</p>
+          <p>Gracias por enseñarme valores que valen más que cualquier cosa: la honestidad, el respeto, la perseverancia, el amor verdadero sin condiciones. Gracias por mostrarme con tu ejemplo lo que significa ser fuerte. <span class="highlight">Gracias por convertirme, poco a poco, en un mejor hombre.</span> Porque cada vez que elijo el camino correcto, es porque llevo tu voz dentro guiándome.</p>
+          <p>Te amo con una fuerza que no cabe en palabras, mami. Eres mi todo, mi raíz, mi luz. Pronto estaré ahí para darte todos los abrazos que te debo, para compensar el tiempo perdido y para demostrarte con hechos —no solo con mensajes— cuánto significas para mí.</p>
+          <p><span class="highlight">Feliz cumpleaños, mi amor más grande.</span> Que este día te llene de la misma alegría inmensa que tú me das a mí todos los días. 🌹❤️</p>
+          <p>Te amo infinitamente.</p>
+        </div>
+        <div class="letter-signature">
+          <p class="sign-text">Con todo mi amor,</p>
+          <p class="sign-name">Tu hijo Jhoao, que te admira y te agradece eternamente ❤️</p>
+        </div>
+        <div class="letter-roses">🌹 🌹 🌹 🌹 🌹</div>
+      </div>
+    </section>
+
+    <!-- CARRUSEL DE FOTOS -->
+    <section class="carousel-section">
+      <p class="section-label reveal">Una vida de momentos hermosos</p>
+      <h2 class="section-title reveal">Tus recuerdos, mi tesoro</h2>
+
+      <div class="carousel-wrapper reveal">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide active"><img src="foto3.jpg" alt="Recuerdo 1"><div class="carousel-caption">Mi familia, mi todo 🌹</div></div>
+          <div class="carousel-slide"><img src="foto4.jpg" alt="Recuerdo 2"><div class="carousel-caption">Siempre tan hermosa ✨</div></div>
+          <div class="carousel-slide"><img src="foto5.jpg" alt="Recuerdo 3"><div class="carousel-caption">Mami en cada lugar 💕</div></div>
+          <div class="carousel-slide"><img src="foto6.jpg" alt="Recuerdo 4"><div class="carousel-caption">Tu fortaleza me inspira 🌸</div></div>
+          <div class="carousel-slide"><img src="foto7.jpg" alt="Recuerdo 5"><div class="carousel-caption">Juntos en la aventura 🌿</div></div>
+          <div class="carousel-slide"><img src="foto8.jpg" alt="Recuerdo 6"><div class="carousel-caption">Momentos que guardo en el alma 💖</div></div>
+          <div class="carousel-slide"><img src="foto9.jpg" alt="Recuerdo 7"><div class="carousel-caption">Tu sonrisa, mi hogar 🏡</div></div>
+          <div class="carousel-slide"><img src="foto10.jpg" alt="Recuerdo 8"><div class="carousel-caption">Cada momento contigo es único 🌹</div></div>
+          <div class="carousel-slide"><img src="foto11.jpg" alt="Recuerdo 9"><div class="carousel-caption">Mi mami, mi ejemplo 💫</div></div>
+          <div class="carousel-slide"><img src="foto12.jpg" alt="Recuerdo 10"><div class="carousel-caption">El amor más grande de mi vida ❤️</div></div>
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN FINAL -->
+    <section class="final-section">
+      <span class="final-rose">🌹</span>
+      <div class="divider"></div>
+      <p class="final-message">Feliz cumpleaños,<br>Mami hermosa</p>
+      <p class="final-sub">57 años de ser la luz de nuestra familia ✨</p>
+      <div class="divider"></div>
+      <p class="footer-text">Hecho con 🌹 y mucho amor</p>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
